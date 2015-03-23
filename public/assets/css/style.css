@@ -1,0 +1,45 @@
+body {
+  background: #000;
+}
+
+.video-header {
+  background: #ffba00;
+  padding: 20px 40px;
+}
+.video-header h4 {
+  color: #fff;
+}
+
+.video-content {
+  margin: 10px 40px;
+  background: #fff;
+}
+
+.video-list {
+  padding: 20px;
+}
+.video-list:after {
+  clear: both;
+  display: block;
+  content: ' ';
+}
+.video-list .item {
+  float: left;
+  max-width: 300px;
+  padding: 10px;
+  border: 1px #f1f1f1 solid;
+  margin: 10px;
+}
+.video-list .desc h5 {
+  color: #ffba00;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.video-list .desc p {
+  padding: 0 10px;
+  font-size: 13px;
+}
+.video-list .desc p span {
+  font-size: 12px;
+  color: #777;
+}

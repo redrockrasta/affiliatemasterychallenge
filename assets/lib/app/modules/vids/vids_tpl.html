@@ -1,0 +1,17 @@
+<div class="video-list">
+
+    <div class="item" ng-repeat="video in videos.data">
+        <div class="thumb">
+            <a href="/#/watch/{{video.id}}">
+                <img ng-src="{{video.thumbnail_url}}">
+            </a>
+        </div>
+        <div class="desc">
+            <h5>{{video.title}}</h5>
+            <p>{{video.description}}</p>
+            <p><span>{{video.created_at}}</span></p>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,101 @@
+{
+  "name": "affiliatemasterychallenge",
+  "version": "0.0.1",
+  "description": "affiliatemasterychallenge",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "options": {
+    "dest": "public/assets/",
+    "tmp": "tmp",
+    "bucketfolder": "assets",
+    "manifest": "storage/meta",
+    "expire": {
+      "Cache-Control": "max-age=604800, public",
+      "Pragma": "public"
+    },
+    "css": {
+      "src": [
+        "assets/app/css/*.{scss,css}",
+        "assets/styles/**/*.{scss,css}"
+      ],
+      "loadPath": [
+        "assets/vendor/foundation/scss",
+        "assets/styles"
+      ],
+      "cacheLocation": "app/storage/cache/.sass-cache"
+    },
+    "js": {
+      "src": [
+        "assets/app/js/**/*.js"
+      ],
+      "appsrc": [
+        "assets/lib/**/*.js"
+      ]
+    },
+    "jsonhtml": {
+      "src": [
+        "assets/lib/template/**/*.tpl"
+      ]
+    },
+
+    "mapfiles": {
+      "src": [
+        "assets/**/*.map"
+      ]
+    },
+    "angularTemplate": {
+      "src": [
+        "assets/template/**/*.tpl"
+      ],
+      "appsrc": [
+        "assets/lib/app/**/*.html"
+      ]
+    },
+    "template": {
+      "src": [
+        "assets/lib/**/*.{html,json}"
+      ]
+    },
+    "fonts": {
+      "src": [
+        "assets/app/fonts/**/*.{ttf,eot,svg,woff}"
+      ]
+    },
+    "images": {
+      "src": [
+        "assets/app/**/*.{ico,jpeg,jpg,gif,bmp,png,webp,swf,svg,mp3}"
+      ]
+    }
+  },
+  "dependencies": {
+    "gulp": "^3.8.9",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-awspublish": "0.0.17",
+    "gulp-awspublish-router": "0.0.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-flatten": "0.0.2",
+    "gulp-html-to-json": "^0.1.5",
+    "gulp-if": "^1.2.5",
+    "gulp-imagemin": "^0.6.2",
+    "gulp-include": "^0.2.3",
+    "gulp-jshint": "^1.8.6",
+    "gulp-livereload": "^2.1.0",
+    "gulp-load-plugins": "^0.5.3",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-rename": "^1.2.0",
+    "gulp-rev": "git://github.com/code-ninja/gulp-rev",
+    "gulp-rev-replace": "git://github.com/code-ninja/gulp-rev-replace",
+    "gulp-ruby-sass": "^0.5.0",
+    "gulp-size": "^0.4.1",
+    "gulp-uglify": "^0.3.2",
+    "gulp-util": "^2.2.20",
+    "run-sequence": "^0.3.7"
+  },
+  "devDependencies": {
+    "gulp-jshint": "^1.6.3",
+    "gulp-ruby-sass": "^0.5.0"
+  }
+}

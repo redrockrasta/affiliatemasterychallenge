@@ -1,0 +1,16 @@
+
+<div class="video-list">
+    <div class="columns large-6 medium-6">
+        <video width="100%" controls ng-show="video.data.url != ''">
+          <source ng-src="{{video.url}}" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+    </div>
+    <div class="columns large-6 medium-6">
+        <div class="desc">
+            <h5>{{video.data.title}}</h5>
+            <p>{{video.data.description}}</p>
+            <p><span>{{video.data.created_at}}</span></p>
+        </div>
+    </div>
+</div>
