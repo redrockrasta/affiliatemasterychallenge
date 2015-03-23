@@ -1,0 +1,22 @@
+• How do you make your Javascript codes maintainable?
+
+    - Javascript codes should be structured in a way that each class should have a single responsibility.
+    If a certain function is repeatable across application, it should be a service or a plugin. Lastly, DOM manipulation
+    should be separated business logic.
+
+• What is a typical usage case for anonymous functions?
+
+    - anonymous function typically used for callbacks especially if your doing async process
+
+• How do you go about testing your Javascript?
+
+    - i use automated test runners such as testem and testing frameworks such as jasmine and qunit
+
+• How/why is usage of templates in Javascript applications important?
+
+    - for maintainability. templates are very effective in maintaining the app specially in a large team.
+    - for performance. template can be loaded asynchronously so can pull only those you need
+
+• Explain how prototypal inheritance works.
+
+    - it creates a new object with its prototype set to whatever you want.
